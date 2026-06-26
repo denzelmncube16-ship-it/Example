@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #ff4d4d, #ff7a7a);
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: white;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* WHATSAPP BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #1ebe5d;
+  transform: scale(1.05);
+}
+
+/* MENU GRID */
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+/* FOOD ITEM CARD */
+.item {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #222;
+  color: white;
+  margin-top: 20px;
+}
