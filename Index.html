@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Delicious Eats 🍔</title>
+  <title>Midrand Eats | Fresh Food & Fast Orders</title>
 
   <style>
     * {
@@ -14,20 +14,27 @@
     }
 
     body {
-      background: #0f0f0f;
+      background: #0b0b0b;
       color: white;
+    }
+
+    /* TOP BAR */
+    .topbar {
+      background: #ff3d3d;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
     }
 
     /* HEADER */
     header {
-      background: linear-gradient(135deg, #ff3c3c, #ff8a00);
       padding: 25px;
       text-align: center;
+      background: linear-gradient(135deg, #ff3d3d, #ff9a00);
     }
 
     header h1 {
-      font-size: 30px;
-      font-weight: bold;
+      font-size: 32px;
     }
 
     header p {
@@ -42,7 +49,7 @@
     }
 
     .hero h2 {
-      font-size: 32px;
+      font-size: 34px;
       margin-bottom: 10px;
     }
 
@@ -51,7 +58,6 @@
       margin-bottom: 20px;
     }
 
-    /* BUTTON */
     .btn {
       display: inline-block;
       padding: 14px 25px;
@@ -65,24 +71,30 @@
 
     .btn:hover {
       transform: scale(1.05);
-      background: #1ebe5d;
+    }
+
+    /* SECTION TITLE */
+    .section-title {
+      text-align: center;
+      margin: 40px 0 10px;
+      font-size: 22px;
+      color: #ffb300;
     }
 
     /* MENU */
     .menu {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 20px;
-      padding: 40px;
+      padding: 30px;
     }
 
     .card {
       background: #1c1c1c;
       padding: 20px;
       border-radius: 15px;
-      text-align: center;
-      box-shadow: 0 0 15px rgba(0,0,0,0.5);
       transition: 0.3s;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
     }
 
     .card:hover {
@@ -91,65 +103,116 @@
 
     .price {
       color: #ffb300;
+      margin: 10px 0;
       font-weight: bold;
+    }
+
+    .order-btn {
+      display: inline-block;
       margin-top: 10px;
+      padding: 10px 15px;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    /* ABOUT */
+    .about {
+      padding: 40px 20px;
+      text-align: center;
+      background: #0f0f0f;
+      color: #ccc;
+    }
+
+    /* MAP */
+    .map {
+      padding: 20px;
+      text-align: center;
+    }
+
+    iframe {
+      width: 90%;
+      height: 250px;
+      border: none;
+      border-radius: 10px;
     }
 
     /* FOOTER */
     footer {
       text-align: center;
       padding: 20px;
-      background: #000;
+      background: black;
       color: #777;
-      margin-top: 20px;
+      font-size: 13px;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
+  <div class="topbar">
+    🚀 Fast WhatsApp Orders | Fresh Food Made Daily | Midrand
+  </div>
+
   <header>
-    <h1>Delicious Eats 🍔</h1>
-    <p>Fresh food made daily in Midrand</p>
+    <h1>Midrand Eats 🍔</h1>
+    <p>Fresh food. Fast service. Order in seconds.</p>
   </header>
 
-  <!-- HERO -->
   <section class="hero">
-    <h2>Hungry? We got you.</h2>
-    <p>Order fast via WhatsApp — no apps, no stress.</p>
+    <h2>Hungry? We Deliver Fast.</h2>
+    <p>No apps needed — just WhatsApp your order.</p>
 
     <a class="btn" href="https://wa.me/27600000000" target="_blank">
       Order on WhatsApp
     </a>
   </section>
 
-  <!-- MENU -->
+  <h2 class="section-title">🔥 Popular Menu</h2>
+
   <section class="menu">
 
     <div class="card">
       <h3>Burger Meal</h3>
-      <p>Juicy beef burger + fries</p>
+      <p>Beef burger + fries + sauce</p>
       <div class="price">R45</div>
+      <a class="order-btn" href="https://wa.me/27600000000?text=I want Burger Meal R45">Order Now</a>
     </div>
 
     <div class="card">
       <h3>Chicken Wrap</h3>
-      <p>Grilled chicken with sauce</p>
+      <p>Grilled chicken wrap with mayo</p>
       <div class="price">R40</div>
+      <a class="order-btn" href="https://wa.me/27600000000?text=I want Chicken Wrap R40">Order Now</a>
     </div>
 
     <div class="card">
       <h3>Pizza Slice</h3>
       <p>Cheesy pepperoni slice</p>
       <div class="price">R35</div>
+      <a class="order-btn" href="https://wa.me/27600000000?text=I want Pizza Slice R35">Order Now</a>
     </div>
 
   </section>
 
-  <!-- FOOTER -->
+  <div class="about">
+    <h2>About Us</h2>
+    <p>
+      We are a local food business in Midrand serving fresh, affordable meals daily.
+      Our goal is fast service and quality food delivered through WhatsApp ordering.
+    </p>
+  </div>
+
+  <h2 class="section-title">📍 Find Us</h2>
+
+  <div class="map">
+    <iframe src="https://www.google.com/maps?q=Midrand&output=embed"></iframe>
+  </div>
+
   <footer>
-    📍 Midrand | Fast WhatsApp Ordering | Open Daily
+    © 2026 Midrand Eats | Built by Local Web Developer | WhatsApp Orders Only
   </footer>
 
 </body>
