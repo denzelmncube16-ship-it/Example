@@ -3,10 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Delicious Eats</title>
+  <title>Delicious Eats 🍔</title>
 
-  <!-- CSS LINK (IMPORTANT) -->
-  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0f0f0f;
+      color: white;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #ff3c3c, #ff8a00);
+      padding: 25px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    header p {
+      opacity: 0.9;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: #111;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #bbb;
+      margin-bottom: 20px;
+    }
+
+    /* BUTTON */
+    .btn {
+      display: inline-block;
+      padding: 14px 25px;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background: #1ebe5d;
+    }
+
+    /* MENU */
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .card {
+      background: #1c1c1c;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .price {
+      color: #ffb300;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      color: #777;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 
 <body>
@@ -17,42 +114,42 @@
     <p>Fresh food made daily in Midrand</p>
   </header>
 
-  <!-- HERO SECTION -->
+  <!-- HERO -->
   <section class="hero">
-    <h1>Welcome to Delicious Eats</h1>
-    <p>Order your favourite meals fast and easy via WhatsApp</p>
+    <h2>Hungry? We got you.</h2>
+    <p>Order fast via WhatsApp — no apps, no stress.</p>
 
     <a class="btn" href="https://wa.me/27600000000" target="_blank">
       Order on WhatsApp
     </a>
   </section>
 
-  <!-- MENU SECTION -->
+  <!-- MENU -->
   <section class="menu">
 
-    <div class="item">
+    <div class="card">
       <h3>Burger Meal</h3>
-      <p>Juicy burger with fries</p>
-      <strong>R45</strong>
+      <p>Juicy beef burger + fries</p>
+      <div class="price">R45</div>
     </div>
 
-    <div class="item">
+    <div class="card">
       <h3>Chicken Wrap</h3>
-      <p>Grilled chicken wrap with sauce</p>
-      <strong>R40</strong>
+      <p>Grilled chicken with sauce</p>
+      <div class="price">R40</div>
     </div>
 
-    <div class="item">
+    <div class="card">
       <h3>Pizza Slice</h3>
       <p>Cheesy pepperoni slice</p>
-      <strong>R35</strong>
+      <div class="price">R35</div>
     </div>
 
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>📍 Midrand | Contact us on WhatsApp for orders</p>
+    📍 Midrand | Fast WhatsApp Ordering | Open Daily
   </footer>
 
 </body>
